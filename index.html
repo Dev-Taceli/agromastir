@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Compra e Venda de Grãos | Feijão, Milho, Soja e Café | Agro Mastir</title>
+  <meta name="description" content="Corretora de grãos em Guaíra-SP especializada na compra e venda de feijão, milho, café e soja. Atendemos produtores, compradores e investidores com transparência, suporte e lucratividade.">
+  <meta name="keywords" content="compra e venda de grãos, corretora de grãos, feijão, milho, café, soja, investimento em grãos, armazenagem, agronegócio, lucros com grãos, Guaíra-SP, corretora agrícola em Guaíra">
+  <meta name="robots" content="index, follow">
+  <meta property="og:title" content="Agro Mastir | Corretora de Grãos e Investimento Agrícola em Guaíra-SP">
+  <meta property="og:description" content="Intermediação de grãos com suporte comercial, estrutura de armazenagem e oportunidades para investidores em Guaíra-SP.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.agromastir.com.br">
+  <link rel="canonical" href="https://www.agromastir.com.br">
+  <link rel="icon" href="imagens/agro1.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background-color: #f4f4f4;
+    }
+
+    header {
+      background-color: #2c598a;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 40px;
+      height: 120px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    .area-cliente {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-cliente {
+      background-color: #ffffff;
+      color: #2c598a;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      border: 2px solid #ffffff;
+    }
+
+    .btn-cliente:hover {
+      background-color: #275330;
+      color: #ffffff;
+      border-color: #275330;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      background-color: #275330;
+      color: #fff;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-direction: column;
+      cursor: pointer;
+    }
+
+    .menu-toggle div {
+      width: 25px;
+      height: 3px;
+      background: #fff;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      header {
+        height: auto;
+        padding: 10px 20px;
+      }
+
+  nav {
+    position: absolute;
+    top: 70px; /* ajuste esse valor até ficar ideal */
+    right: 0;
+    width: 100%;
+    background-color: #2c598a;
+  }
+
+      nav ul {
+        flex-direction: column;
+        align-items: flex-end;
+        padding: 20px 40px;
+        display: none;
+      }
+
+      nav ul.active {
+        display: flex;
+      }
+
+      .menu-toggle {
+        display: flex;
+      }
+
+      nav ul li {
+        width: 100%;
+      }
+
+      nav ul li a {
+        display: inline-block;
+        width: auto;
+        padding: 12px 20px;
+        margin-bottom: 8px;
+      }
+    }
+
+    .banner {
+      margin-top: 100px;
+      width: 100%;
+      height: auto;
+    }
+
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .sobre, .atuacao {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+    }
+
+    .sobre {
+      background-color: #fff;
+    }
+
+    .atuacao {
+      background-color: #2c598a;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 1200px;
+      width: 100%;
+      gap: 40px;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .sobre-texto, .atuacao-texto {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .sobre-texto h2, .atuacao-texto h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .sobre-texto h2 {
+      color: #2c598a;
+    }
+
+    .atuacao-texto h2 {
+      color: #fff;
+    }
+
+    .sobre-texto p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #444;
+      margin-bottom: 15px;
+    }
+
+    .atuacao-texto p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e4e4e4;
+      margin-bottom: 15px;
+    }
+
+    .imagem {
+      flex: 1;
+      min-width: 300px;
+      text-align: center;
+    }
+
+    .imagem img {
+      width: 100%;
+      max-width: 350px;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: left;
+      }
+
+      .imagem {
+        margin-top: 30px;
+      }
+    }
+
+    .faq {
+      background-color: #fff;
+      padding: 60px 20px;
+    }
+
+    .faq-container {
+      max-width: 900px;
+      margin: 0 auto;
+    }
+
+    .faq-container h2 {
+      font-size: 32px;
+      color: #2c598a;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .faq-item {
+      margin-bottom: 15px;
+      border-radius: 8px;
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background-color: #2c598a;
+      color: #fff;
+      font-size: 16px;
+      font-weight: 500;
+      border: none;
+      padding: 15px 20px;
+      text-align: left;
+      cursor: pointer;
+      transition: background 0.3s ease;
+      border-radius: 8px;
+    }
+
+    .faq-question:hover {
+      background-color: #1e4027;
+    }
+
+    .faq-answer {
+      display: none;
+      background-color: #f9f9f9;
+      padding: 15px 20px;
+      color: #444;
+      font-size: 15px;
+      line-height: 1.6;
+      border-left: 4px solid #2c598a;
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    .rodape {
+      background-color: #2c598a;
+      color: #fff;
+      padding: 30px 20px;
+      text-align: center;
+      font-size: 15px;
+    }
+
+    .rodape a {
+      color: #fff;
+      text-decoration: underline;
+      margin: 0 5px;
+      transition: color 0.3s;
+    }
+
+    .rodape a:hover {
+      color: #ffcc00;
+    }
+
+    .cookie-banner {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #464646;
+      color: #fff;
+      padding: 15px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 9999;
+      flex-wrap: wrap;
+    }
+
+    .cookie-banner p {
+      margin: 0;
+      font-size: 14px;
+      flex: 1;
+    }
+
+    .cookie-banner a {
+      color: #fff;
+      text-decoration: underline;
+    }
+
+    .cookie-banner button {
+      background-color: #07995e;
+      color: #fff;
+      border: none;
+      padding: 10px 20px;
+      font-size: 14px;
+      border-radius: 5px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    @media (min-width: 600px) {
+      .cookie-banner button {
+        margin-top: 0;
+      }
+    }
+
+    .whatsapp-button {
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      z-index: 9998;
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+    }
+
+    .whatsapp-button img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%;
+      box-shadow: 0 0 10px rgba(0,0,0,0.2);
+      transition: transform 0.3s ease;
+    }
+
+    .whatsapp-button img:hover {
+      transform: scale(1.1);
+    }
+	@media (max-width: 768px) {
+  .banner {
+    margin-top: 60px; /* ou até menos se quiser colar mais */
+  }
+}
+section[id] {
+  scroll-margin-top: 120px; /* igual ou maior que a altura do header */
+}
+
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="area-cliente">
+      <a href="#" class="btn-cliente">Área do Cliente</a>
+    </div>
+    <div class="menu-toggle" onclick="toggleMenu()">
+
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <nav>
+      <ul id="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#sobre">Empresa</a></li>
+        <li><a href="#atuacao">Atuação</a></li>
+        <li><a href="#investimento">Investidor</a></li>
+        <li><a href="https://wa.me/5517997818991?text=Iniciar%20Atendimento">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<section class="banner">
+  <picture>
+    <source media="(max-width: 768px)" srcset="imagens/agro6.png">
+    <img src="imagens/agro2.png" alt="Banner Agro Mastir">
+  </picture>
+</section>
+
+<section class="sobre" id="sobre">
+  <div class="container">
+<div class="sobre-texto">
+  <h2>Agro Mastir</h2>
+  <p>A <strong>Agro Mastir</strong> é uma corretora de grãos com sede própria em Guaíra-SP, especializada na intermediação de compra e venda de produtos agrícolas e insumos, como feijão, milho, soja e café.</p>
+  <p>Faz parte do <strong>Grupo Mastir</strong>, que está presente no mercado desde 1999 e reúne empresas como <strong>Mastir Pivot</strong>, <strong>Mastir Solar</strong> e <strong>Mastir Agropecuária</strong> — atuando de forma integrada em diferentes áreas do agronegócio, com excelência e credibilidade reconhecida em todo o país.</p>
+  <p>São mais de 25 anos de tradição, promovendo soluções inteligentes, sustentáveis e rentáveis para produtores, investidores e distribuidores do setor.</p>
+  <p>Com profundo conhecimento técnico e experiência de mercado, a <strong>Agro Mastir</strong> fortalece a cadeia produtiva ao oferecer negociações seguras, suporte completo e relações comerciais duradouras.</p>
+</div>
+
+
+
+    <div class="imagem">
+      <img src="imagens/agro3.png" alt="Sobre a Agro Mastir">
+    </div>
+  </div>
+</section>
+
+
+
+<section class="atuacao" id="atuacao">
+  <div class="container">
+    <div class="imagem">
+      <img src="imagens/agro4.png" alt="Atuação Agro Mastir">
+    </div>
+<div class="atuacao-texto">
+  <h2>Atuação</h2>
+  <p>A <strong>Agro Mastir</strong> atua em diversas regiões do Brasil, promovendo conexões comerciais sólidas entre produtores rurais, cooperativas, cerealistas, agroindústrias, moageiros e beneficiadores de grãos.</p>
+  <p>Nosso compromisso vai além da intermediação de grãos: oferecemos assessoria comercial, acompanhamento próximo e suporte em todas as etapas da negociação, assegurando transparência, segurança e bom relacionamento entre as partes envolvidas.</p>
+  <p>A <strong>Agro Mastir</strong> acredita que cada operação bem conduzida contribui para o fortalecimento das parcerias, tornando-as mais consistentes e duradouras a cada nova safra.</p>
+</div>
+
+
+  </div>
+</section>
+
+
+
+  
+<section class="sobre" id="investimento">
+  <div class="container">
+<div class="sobre-texto">
+  <h2>Invista em Grãos com a <strong>Agro Mastir</strong></h2>
+  <p>Buscando uma forma segura e rentável de investir no agronegócio? A <strong>Agro Mastir</strong> oferece oportunidades exclusivas para investidores interessados em comprar grãos durante a safra, armazenar com infraestrutura própria e vender na entressafra, aproveitando a valorização natural do mercado.</p>
+  <p>Fazemos toda a corretagem, avaliação de mercado, intermediação com produtores e suporte logístico. Você acompanha cada etapa e maximiza seus lucros com segurança e transparência.</p>
+  <p><strong>Invista no futuro do agronegócio com quem entende do mercado.</strong></p>
+</div>
+
+    <div class="imagem">
+      <img src="imagens/agro7.png" alt="Investimento em Grãos em Guaíra-SP">
+    </div>
+  </div>
+</section>
+
+<section class="mapa-local">
+  <h2 style="text-align:center; color:#2c598a; margin: 40px 0 20px;">Onde Estamos</h2>
+  <div style="width: 100%; max-width: 100%; padding: 0 20px; box-sizing: border-box;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!4v1751674248685!6m8!1m7!1slAlGdkXaGYRml2Q6L6vnpA!2m2!1d-20.31840374264068!2d-48.30096732616104!3f322.98005386381277!4f3.355662304024321!5f0.7820865974627469" 
+      width="100%" 
+      height="450" 
+      style="border:0; border-radius: 8px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
+
+<footer class="rodape">
+  <div class="rodape-container">
+    <p><strong>Agro Mastir</strong></p>
+    <p>Av: José Quintino dos Santos, 180 - Parque Industrial, Guaíra - SP, 14790-000</p>
+    <p>Telefone: (17) 3330-6100</p>
+    <p>E-mail: <a href="mailto:contato@agromastir.com.br">contato@agromastir.com.br</a></p>
+    <p>Copyright 2025 - Todos os direitos reservados</p>
+  </div>
+</footer>
+
+
+  <!-- BOTÃO FLUTUANTE WHATSAPP -->
+  <a href="https://wa.me/5517997818991?text=Iniciar%20Atendimento" target="_blank" class="whatsapp-button">
+    <img src="https://i.imgur.com/wTQgnaR.png" alt="WhatsApp Agro Mastir">
+  </a>
+
+<script>
+function toggleMenu() {
+  const menu = document.getElementById('menu');
+  menu.classList.toggle('active');
+}
+</script>
+
+<script>
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+faqQuestions.forEach(question => {
+  question.addEventListener('click', () => {
+    const faqItem = question.parentElement;
+    faqItem.classList.toggle('active');
+  });
+});
+</script>
+</body>
+
+
+</html>
