@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Compra e Venda de Grãos | Feijão, Milho, Soja e Café | Agro Taceli</title>
+  <title>Compra e Venda de Grãos | Feijão, Milho, Soja e Café | Agro Mastir</title>
   <meta name="description" content="Corretora de grãos em Guaíra-SP especializada na compra e venda de feijão, milho, café e soja. Atendemos produtores, compradores e investidores com transparência, suporte e lucratividade.">
   <meta name="keywords" content="compra e venda de grãos, corretora de grãos, feijão, milho, café, soja, investimento em grãos, armazenagem, agronegócio, lucros com grãos, Guaíra-SP, corretora agrícola em Guaíra">
   <meta name="robots" content="index, follow">
-  <meta property="og:title" content="Agro Taceli | Corretora de Grãos e Investimento Agrícola em Guaíra-SP">
+  <meta property="og:title" content="Agro Mastir | Corretora de Grãos e Investimento Agrícola em Guaíra-SP">
   <meta property="og:description" content="Intermediação de grãos com suporte comercial, estrutura de armazenagem e oportunidades para investidores em Guaíra-SP.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://www.agrotaceli.com.br">
-  <link rel="canonical" href="https://www.agrotaceli.com.br">
-   <link rel="icon" href="https://i.imgur.com/q7HAiYJ.png" type="image/x-icon">
+  <meta property="og:url" content="https://www.agromastir.com.br">
+  <link rel="canonical" href="https://www.agromastir.com.br">
+  <link rel="icon" href="imagens/agro1.png" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     * {
@@ -27,7 +27,7 @@
     }
 
     header {
-      background-color: #275330;
+      background-color: #2c598a;
       display: flex;
       align-items: center;
       justify-content: space-between;
@@ -40,8 +40,26 @@
       z-index: 1000;
     }
 
-    .logo img {
-      height: 110px;
+    .area-cliente {
+      display: flex;
+      align-items: center;
+    }
+
+    .btn-cliente {
+      background-color: #ffffff;
+      color: #2c598a;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+      transition: background 0.3s, color 0.3s;
+      border: 2px solid #ffffff;
+    }
+
+    .btn-cliente:hover {
+      background-color: #275330;
+      color: #ffffff;
+      border-color: #275330;
     }
 
     nav ul {
@@ -60,8 +78,8 @@
     }
 
     nav ul li a:hover {
-      background-color: #3b7a4e;
-      color: #ffcc00;
+      background-color: #275330;
+      color: #fff;
     }
 
     .menu-toggle {
@@ -83,13 +101,13 @@
         padding: 10px 20px;
       }
 
-      nav {
-        position: absolute;
-        top: 120px;
-        right: 0;
-        width: 100%;
-        background-color: #275330;
-      }
+  nav {
+    position: absolute;
+    top: 70px; /* ajuste esse valor até ficar ideal */
+    right: 0;
+    width: 100%;
+    background-color: #2c598a;
+  }
 
       nav ul {
         flex-direction: column;
@@ -119,7 +137,7 @@
     }
 
     .banner {
-      margin-top: 130px;
+      margin-top: 100px;
       width: 100%;
       height: auto;
     }
@@ -142,7 +160,7 @@
     }
 
     .atuacao {
-      background-color: #275330;
+      background-color: #2c598a;
     }
 
     .container {
@@ -166,7 +184,7 @@
     }
 
     .sobre-texto h2 {
-      color: #275330;
+      color: #2c598a;
     }
 
     .atuacao-texto h2 {
@@ -223,7 +241,7 @@
 
     .faq-container h2 {
       font-size: 32px;
-      color: #275330;
+      color: #2c598a;
       text-align: center;
       margin-bottom: 40px;
     }
@@ -236,7 +254,7 @@
 
     .faq-question {
       width: 100%;
-      background-color: #275330;
+      background-color: #2c598a;
       color: #fff;
       font-size: 16px;
       font-weight: 500;
@@ -259,7 +277,7 @@
       color: #444;
       font-size: 15px;
       line-height: 1.6;
-      border-left: 4px solid #275330;
+      border-left: 4px solid #2c598a;
     }
 
     .faq-item.active .faq-answer {
@@ -267,7 +285,7 @@
     }
 
     .rodape {
-      background-color: #275330;
+      background-color: #2c598a;
       color: #fff;
       padding: 30px 20px;
       text-align: center;
@@ -328,7 +346,6 @@
       }
     }
 
-    /* BOTÃO WHATSAPP */
     .whatsapp-button {
       position: fixed;
       bottom: 90px;
@@ -350,15 +367,47 @@
     .whatsapp-button img:hover {
       transform: scale(1.1);
     }
+	@media (max-width: 768px) {
+  .banner {
+    margin-top: 60px; /* ou até menos se quiser colar mais */
+  }
+}
+section[id] {
+  scroll-margin-top: 120px; /* igual ou maior que a altura do header */
+}
+
   </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Agro Mastir",
+  "image": "https://www.agromastir.com.br/imagens/agro1.png",
+  "url": "https://www.agromastir.com.br",
+  "telephone": "+55-17-3330-6100",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av: José Quintino dos Santos, 180",
+    "addressLocality": "Guaíra",
+    "addressRegion": "SP",
+    "postalCode": "14790-000",
+    "addressCountry": "BR"
+  },
+  "description": "Corretora de grãos em Guaíra-SP especializada na compra e venda de feijão, milho, soja e café. Intermediação agrícola, suporte completo e oportunidades para investidores.",
+  "openingHours": "Mo-Fr 08:00-18:00",
+  "sameAs": ["https://www.facebook.com/agromastir", "https://www.instagram.com/agromastir"]
+}
+</script>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="https://i.imgur.com/yGiKxEH.png" alt="Logo Agro Taceli">
+    <div class="area-cliente">
+      <a href="#" class="btn-cliente">Área do Cliente</a>
     </div>
     <div class="menu-toggle" onclick="toggleMenu()">
+
       <div></div>
       <div></div>
       <div></div>
@@ -368,7 +417,7 @@
         <li><a href="#">Home</a></li>
         <li><a href="#sobre">Empresa</a></li>
         <li><a href="#atuacao">Atuação</a></li>
-        <li><a href="#">Parceiros</a></li>
+        <li><a href="#investimento">Investidor</a></li>
         <li><a href="https://wa.me/5517997818991?text=Iniciar%20Atendimento">Contato</a></li>
       </ul>
     </nav>
@@ -376,22 +425,25 @@
 
 <section class="banner">
   <picture>
-    <source media="(max-width: 768px)" srcset="https://i.imgur.com/XmcFRr1.png">
-    <img src="https://i.imgur.com/hityKJz.png" alt="Banner Agro Taceli">
+    <source media="(max-width: 768px)" srcset="imagens/agro6.png">
+    <img src="imagens/agro2.png" alt="Banner Agro Mastir">
   </picture>
 </section>
 
 <section class="sobre" id="sobre">
   <div class="container">
 <div class="sobre-texto">
-  <h2>Agro Taceli</h2>
-  <p>Com sede própria em Guaíra-SP, a Agro Taceli atua como corretora de grãos, especializada na intermediação de compra e venda de produtos agrícolas e insumos.</p>
-  <p>Focada nas negociações de feijão, milho, soja e café, a Agro Taceli se destaca como um elo estratégico entre produtores, compradores e distribuidores, contribuindo para o fortalecimento e dinamismo do mercado agrícola nacional.</p>
-  <p>Profissionais do setor contam com a credibilidade, conhecimento técnico e experiência de mercado que a Agro Taceli oferece, garantindo segurança e eficiência em cada transação.</p>
+  <h2>Agro Mastir</h2>
+  <p>A <strong>Agro Mastir</strong> é uma corretora de grãos com sede própria em Guaíra-SP, especializada na intermediação de compra e venda de produtos agrícolas e insumos, como feijão, milho, soja e café.</p>
+  <p>Faz parte do <strong>Grupo Mastir</strong>, que está presente no mercado desde 1999 e reúne empresas como <strong>Mastir Pivot</strong>, <strong>Mastir Solar</strong> e <strong>Mastir Agropecuária</strong> — atuando de forma integrada em diferentes áreas do agronegócio, com excelência e credibilidade reconhecida em todo o país.</p>
+  <p>São mais de 25 anos de tradição, promovendo soluções inteligentes, sustentáveis e rentáveis para produtores, investidores e distribuidores do setor.</p>
+  <p>Com profundo conhecimento técnico e experiência de mercado, a <strong>Agro Mastir</strong> fortalece a cadeia produtiva ao oferecer negociações seguras, suporte completo e relações comerciais duradouras.</p>
 </div>
 
+
+
     <div class="imagem">
-      <img src="https://i.imgur.com/MaioC97.png" alt="Sobre a Agro Taceli">
+      <img src="imagens/agro3.png" alt="Sobre a Agro Mastir">
     </div>
   </div>
 </section>
@@ -401,14 +453,15 @@
 <section class="atuacao" id="atuacao">
   <div class="container">
     <div class="imagem">
-      <img src="https://i.imgur.com/hXTznBL.png" alt="Atuação Agro Taceli">
+      <img src="imagens/agro4.png" alt="Atuação Agro Mastir">
     </div>
 <div class="atuacao-texto">
   <h2>Atuação</h2>
-  <p>A Agro Taceli atua com forte presença nos estados de São Paulo e Minas Gerais, promovendo conexões comerciais sólidas entre produtores rurais, cooperativas, cerealistas, agroindústrias, moageiros e beneficiadores de grãos.</p>
+  <p>A <strong>Agro Mastir</strong> atua em diversas regiões do Brasil, promovendo conexões comerciais sólidas entre produtores rurais, cooperativas, cerealistas, agroindústrias, moageiros e beneficiadores de grãos.</p>
   <p>Nosso compromisso vai além da intermediação de grãos: oferecemos assessoria comercial, acompanhamento próximo e suporte em todas as etapas da negociação, assegurando transparência, segurança e bom relacionamento entre as partes envolvidas.</p>
-  <p>A Agro Taceli acredita que cada operação bem conduzida contribui para o fortalecimento das parcerias, tornando-as mais consistentes e duradouras a cada nova safra.</p>
+  <p>A <strong>Agro Mastir</strong> acredita que cada operação bem conduzida contribui para o fortalecimento das parcerias, tornando-as mais consistentes e duradouras a cada nova safra.</p>
 </div>
+
 
   </div>
 </section>
@@ -418,65 +471,53 @@
   
 <section class="sobre" id="investimento">
   <div class="container">
-    <div class="sobre-texto">
-      <h2>Invista em Grãos com a Agro Taceli</h2>
-      <p>Buscando uma forma segura e rentável de investir no agronegócio? A Agro Taceli, sediada em Guaíra-SP, oferece oportunidades exclusivas para investidores interessados em comprar grãos durante a safra, armazenar com infraestrutura própria e vender na entressafra, aproveitando a valorização natural do mercado.</p>
-      <p>Fazemos toda a corretagem, avaliação de mercado, intermediação com produtores e suporte logístico. Você acompanha cada etapa e maximiza seus lucros com segurança e transparência.</p>
-      <p><strong>Invista no futuro do agronegócio com quem entende do mercado em Guaíra e região.</strong></p>
-    </div>
+<div class="sobre-texto">
+  <h2>Invista em Grãos com a <strong>Agro Mastir</strong></h2>
+  <p>Buscando uma forma segura e rentável de investir no agronegócio? A <strong>Agro Mastir</strong> oferece oportunidades exclusivas para investidores interessados em comprar grãos durante a safra, armazenar com infraestrutura própria e vender na entressafra, aproveitando a valorização natural do mercado.</p>
+  <p>Fazemos toda a corretagem, avaliação de mercado, intermediação com produtores e suporte logístico. Você acompanha cada etapa e maximiza seus lucros com segurança e transparência.</p>
+  <p><strong>Invista no futuro do agronegócio com quem entende do mercado.</strong></p>
+</div>
+
     <div class="imagem">
-      <img src="https://i.imgur.com/p6Kn7U2.png" alt="Investimento em Grãos em Guaíra-SP">
+      <img src="imagens/agro7.png" alt="Investimento em Grãos em Guaíra-SP">
     </div>
   </div>
 </section>
 
-<section class="faq">
-    <div class="faq-container">
-      <h2>Dúvidas Comuns</h2>
+<section class="mapa-local">
+  <h2 style="text-align:center; color:#2c598a; margin: 40px 0 20px;">Onde Estamos</h2>
+  <div style="width: 100%; max-width: 100%; padding: 0 20px; box-sizing: border-box;">
+    <iframe 
+      src="https://www.google.com/maps/embed?pb=!4v1751674248685!6m8!1m7!1slAlGdkXaGYRml2Q6L6vnpA!2m2!1d-20.31840374264068!2d-48.30096732616104!3f322.98005386381277!4f3.355662304024321!5f0.7820865974627469" 
+      width="100%" 
+      height="450" 
+      style="border:0; border-radius: 8px;" 
+      allowfullscreen="" 
+      loading="lazy" 
+      referrerpolicy="no-referrer-when-downgrade">
+    </iframe>
+  </div>
+</section>
 
-      <div class="faq-item">
-        <button class="faq-question">Como vender meus grãos?</button>
-        <div class="faq-answer">
-          <p>Você pode vender seus grãos entrando em contato conosco via WhatsApp. Nossa equipe irá solicitar informações básicas do produto (tipo, volume, local de origem, qualidade) e a partir disso iniciaremos a intermediação junto aos compradores mais adequados.</p>
-        </div>
-      </div>
 
-      <div class="faq-item">
-        <button class="faq-question">Como trabalhar como corretor da Agro Taceli?</button>
-        <div class="faq-answer">
-          <p>Interessados em atuar como corretores parceiros devem entrar em contato via WhatsApp para se cadastrar. É importante possuir conhecimento no setor agrícola e facilidade de comunicação com produtores e compradores.</p>
-        </div>
-      </div>
+<div style="display:none;">
+  Corretora de grãos em Guaíra-SP. Compra e venda de feijão, milho, soja e café com suporte comercial, logística e armazenagem. Investimento agrícola direto com segurança e rentabilidade. Intermediação de grãos para produtores, cerealistas e investidores. Agro Mastir em Guaíra é referência no agronegócio.
+</div>
 
-      <div class="faq-item">
-        <button class="faq-question">Como avaliar meus grãos?</button>
-        <div class="faq-answer">
-          <p>A avaliação básica dos grãos considera umidade, PH, impurezas, peso e qualidade visual. Para uma avaliação mais precisa, recomendamos análise laboratorial e fotos enviadas para nossa equipe via WhatsApp para triagem inicial.</p>
-        </div>
-      </div>
+<footer class="rodape">
+  <div class="rodape-container">
+    <p><strong>Agro Mastir</strong></p>
+    <p>Av: José Quintino dos Santos, 180 - Parque Industrial, Guaíra - SP, 14790-000</p>
+    <p>Telefone: (17) 3330-6100</p>
+    <p>E-mail: <a href="mailto:contato@agromastir.com.br">contato@agromastir.com.br</a></p>
+    <p>Copyright 2025 - Todos os direitos reservados</p>
+  </div>
+</footer>
 
-      <div class="faq-item">
-        <button class="faq-question">Como posso falar com a Agro Taceli?</button>
-        <div class="faq-answer">
-          <p>Todo o nosso atendimento é realizado via WhatsApp. Basta nos chamar pelo número informado no site para tirar dúvidas, realizar negociações ou iniciar seu cadastro como parceiro ou fornecedor.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <footer class="rodape">
-    <div class="rodape-container">
-      <p>SAC: (17) 99781-8991</p>
-      <p>E-mail: <a href="mailto:contato@agrotaceli.com.br">contato@agrotaceli.com.br</a></p>
-      <p>Copyright 2025 - Todos os direitos reservados</p>
-      <p>
-      </p>
-    </div>
-  </footer>
 
   <!-- BOTÃO FLUTUANTE WHATSAPP -->
   <a href="https://wa.me/5517997818991?text=Iniciar%20Atendimento" target="_blank" class="whatsapp-button">
-    <img src="https://i.imgur.com/wTQgnaR.png" alt="WhatsApp Agro Taceli">
+    <img src="https://i.imgur.com/wTQgnaR.png" alt="WhatsApp Agro Mastir">
   </a>
 
 <script>
